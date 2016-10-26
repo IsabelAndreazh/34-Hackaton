@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>MiPoli Ciudadano</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	</head>
+	<body>
+        <header>
+    		<nav class="navbar navbar-inverse navbar-fixed-top color-menu"> <!--NAVBAR codigo bootstrap para <menus-->
+    			<div class="container">
+    				<div class="navbar-header">
+    					<button type="button" class="navbar-toggle collapsed color-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    						<span class="sr-only">menu</span>
+    						<span class="icon-bar"></span>
+    						<span class="icon-bar"></span>
+    						<span class="icon-bar"></span>
+    					</button>
+    					<a class="navbar-brand" href="index.html"><img class="img_logo" src="img/logo.png" alt=""></a>
+    				</div>
+    				<div id="navbar" class="collapse navbar-collapse color-menu"> <!--COLLAPSE-->
+    					<ul class="nav navbar-nav navbar-right">
+    						<li><a href="index.html">MiPoli Ciudadano</a></li>
+                            <li><a href="registro.html">Ingresar Perfiles</a></li>
+                            <li><a href="agenda.html">Agenda</a></li>
+                            <li><a href="contacto.html">Contáctanos</a></li>
+    					</ul>
+    				</div>
+    			</div>
+    		</nav>
+        </header>
+        <div class="container-fluid">
+            <ul>
+                            <li><a href="#">MiPoliCiudadano</a></li>
+                            <li class="dropdown ">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tienes cuenta? Iniciar sesión <span class="caret"></span>
+                                </a>
+                                <div class="dropdown-menu">
+                                    <p class="mg-3">Tienes cuenta?</p>
+                                    <form class="mg-3">
+                                        <input type="text" name="Nombre" placeholder="Correo o Usuario">
+                                    </form>
+                                    <form class="mg-3">
+                                        <input type="text" name="Email" placeholder="Contraseña">
+                                    </form>
+                                    <button class="mg-3"><a href="#">Iniciar sesión</a></button>
+                                    <hr>
+                                    <p class="mg-3">Eres nuevo en MiPoliCiudadano?</p><!-- modal registrate -->
+                                    <button class="mg-3" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#registrate">REGISTRATE</button>
+                                </div>
+                                <div class="modal fade" id="registrate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content container">
+                                            <div class="container">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h4 class="text-blue1">¡Registrate!</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3 ">Nombre</label>
+                                                        <div class="col-xs-9">
+                                                            <input >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3 ">Email </label>
+                                                        <div class="col-xs-9">
+                                                            <input>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3 ">Contraseña </label>
+                                                        <div class="col-xs-9">
+                                                            <input>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3">Deja alguna descripción</label>
+                                                        <div class="col-xs-9">
+                                                            <textarea rows="5" id="comment"></textarea>
+                                                            <button type="button" class="btn btn-primary block">Registrarme</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">Perfiles</a></li>
+                            <li><a href="#">Agenda</a></li>
+                            <li data-toggle="modal" data-target="#contacto"><a href="#">Contáctanos</a>
+                                <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content container">
+                                            <div class="container">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <h4 class="text-blue1">CONTACTO</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3 ">Nombre </label>
+                                                        <div class="col-xs-9">
+                                                            <input class="caja-contacto">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3 ">Email</label>
+                                                        <div class="col-xs-9">
+                                                            <input class="caja-contacto">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group row">
+                                                        <label class="col-xs-3">Deja tu comentario</label>
+                                                        <div class="col-xs-9">
+                                                            <textarea class="caja-contacto" rows="5" id="comment"></textarea>
+                                                            <button type="button" class="btn btn-primary block">ENVIAR</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <section class="isa"><!-- banner -->
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner " role="listbox">
+                                <div class="item active bg-blue">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h3>POLI DEL MES</h3>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                <img class="img-thumbnail" src="img/perfilpoli2.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <h2>Juan Pérez</h2>
+                                                    <ul>
+                                                        <li>40 años</li>
+                                                        <li>policia</li>
+                                                        <li>me gusta: <a class="text-white" href="#">Motos</a>/<a class="text-white" href="#">Basketbol</a>/<a class="text-white" href="#">Películas</a></li>
+                                                        <li>zona:coyoacan</li>
+                                                        <li><i class="glyphicon glyphicon-heart-empty"></i>67 <i><img src="iconos/charlar.png"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="item  bg-blue">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h3>CIUDADANO DEL DÍA</h3>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                <img class="img-thumbnail" src="img/perfilciudadano1.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <h2>MARISOL LÓPEZ</h2>
+                                                    <ul>
+                                                        <li>30 años</li>
+                                                        <li>taxista</li>
+                                                        <li>me gusta: <a class="text-white" href="#">leer</a>/<a class="text-white" href="#">nadar</a>/<a class="text-white" href="#">Películas</a></li>
+                                                        <li>zona:Miguel Hidaldo</li>
+                                                        <li><i class="glyphicon glyphicon-heart-empty"></i>67 <i><img src="iconos/charlar.png"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="item bg-blue">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h3>ACCIÓN DEL DÍA</h3>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                <img class="img-thumbnail" src="img/perfilciudadano2.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <h2>Jorge Ramos</h2>
+                                                    <ul>
+                                                        <li>22 años</li>
+                                                        <li>estudiante</li>
+                                                        <li>me gusta: <a class="text-white" href="#">dibujar</a>/<a class="text-white" href="#">anime</a>/<a class="text-white" href="#">Películas</a></li>
+                                                        <li>zona:coyoacan</li>
+                                                        <li><i class="glyphicon glyphicon-heart-empty"></i>67 <i><img src="iconos/charlar.png"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="item bg-blue">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="col-xs-12">
+                                                <h3>POLI DEL DÍA</h3>
+                                            </div>
+                                        </div>
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center">
+                                                <img class="img-thumbnail" src="img/perfilpoli3.jpg" style="width: 100px;height:100px;">
+                                                </div>
+                                                <div class="col-sm-9">
+                                                    <h2>Maria Delgado</h2>
+                                                    <ul>
+                                                        <li>27 años</li>
+                                                        <li>policia</li>
+                                                        <li>me gusta: <a class="text-white" href="#">carros</a>/<a class="text-white" href="#">fut</a>/<a class="text-white" href="#">Películas</a></li>
+                                                        <li>zona:coyoacan</li>
+                                                        <li><i class="glyphicon glyphicon-heart-empty"></i>67 <i><img src="iconos/charlar.png"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div> 
+		<div class="container mt-10">
+            <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Paquita la del Barrio-->
+                    <div class="thumbnail">
+                        <img src="img/perfilciudadano1.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">18 hrs</h4>
+                            <h4><a href="#">Paquita la del Barrio</a></h4>
+                            <p>Hoy tuve la gran oportunidad de conocer a MiPoliCiudadano <a href="#">Oscar Mendoza</a>.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">85 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Rafita inclan-->
+                    <div class="thumbnail">
+                        <img src="img/perfilciudadano2.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">2 hrs</h4>
+                            <h4><a href="#">Rafita Inclan</a></h4>
+                            <p>Mi buena acción de hoy: pague mi multa. Un saludo a <a href="#">MiPoliCiudadano</a></p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">48 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Diego bustamante-->
+                    <div class="thumbnail">
+                        <img src="img/perfilciudadano3.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">17 hrs</h4>
+                            <h4><a href="#">Diego Bustamante</a></h4>
+                            <p>Gracias por el apoyo que recibi de <a href="#">MiPoliCiudadano</a>, soy su fan.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">52 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Poli 1-->
+                    <div class="thumbnail">
+                        <img src="img/perfilpoli1.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">9 hrs</h4>
+                            <h4><a href="#">Juan Mendoza</a></h4>
+                            <p>Congtribuyendo con los ciudadanos de la Colonia San Fernando Iztacalco <a href="">MiPoli Ciudadano</a></p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">30 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Poli 2-->
+                    <div class="thumbnail">
+                        <img src="img/perfilpoli2.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">2 hrs</h4>
+                            <h4><a href="#">Antonio Vazquez</a></h4>
+                            <p>Me siento orgulloso de proteger a la ciudadania, gracias por premiarme como el <a href="">Poli del Mes</a></p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">34 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 col-md-4"> <!--perfil Poli 3-->
+                    <div class="thumbnail">
+                        <img src="img/perfilpoli3.jpg" alt="">
+                        <div class="caption">
+                            <h4 class="pull-right">1 hrs</h4>
+                            <h4><a href="#">Cristina Caballero</a>
+                            </h4>
+                            <p>Impartiendo una platica sobre seguridad en la Colonia Colorines Coyoacán <a href="">MiPoli Ciudadano</a>.</p>
+                        </div>
+                        <div class="ratings">
+                            <p class="pull-right">15 reviews</p>
+                            <p>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                                <span class="glyphicon glyphicon-star-empty"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>		
+		</div>
+        <div class="container-fluid">
+            <footer id="back-footer">
+                <div class="row text-center"> <!--FOOTER-->
+                    <div class="col-lg-12">
+                        <p class="footer">Idea: KIVY Consulting</p>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-6">
+                            <img class="img-logos" src="img/ssp.jpg" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="img-logos" src="img/cdmx.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+		<!--JQUERY para que el menu despliegue-->
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	</body>
+</html>
+							

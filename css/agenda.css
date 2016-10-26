@@ -1,0 +1,91 @@
+ul {list-style-type: none;}
+body {font-family: 'Roboto', sans-serif !important;}
+.mes {
+    padding: 70px 25px;
+    width: 100%;
+    background: #6671f3;
+    color: white;
+}
+.mes ul {
+    margin: 0;
+    padding: 0;
+}
+.mes ul li {
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.mes .izq {
+    float: left;
+    padding-top: 10px;
+    color: white;
+}
+.mes .der {
+    float: right;
+    padding-top: 10px;
+    color: white;
+}
+.dias {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+.dias li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+.numeroo {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.numeroo li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+}
+
+.numeroo li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+li {
+    line-height: 5;
+}
+li img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+.bg-azu {
+    background-color: #3a5c69;
+}
+h4, h5 {
+    color: #3A5C69;
+}
+a {
+    color: 6671f3
+}
+button {
+    background-color: #6671f3 !important;
+    color: #f0f8fb;
+}
+.t-azu {
+    color: #f0f8fb;
+    background-color: #3a5c69;
+    padding: 1%;
+    width: 30%;
+}
+.color-menu {
+    background-color: #6B8E9C;
+    border: #6B8E9C;
+}
+
+.img_logo {
+    width: 10%;
+}

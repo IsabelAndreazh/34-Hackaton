@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>MiPoli Ciudadano</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top color-menu"> <!--NAVBAR codigo bootstrap para <menus-->
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed color-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="img_logo" src="img/logo.png" alt=""></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse color-menu"> <!--COLLAPSE-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">MiPoli Ciudadano</a></li>
+                        <li><a href="registro.html">Ingresar Perfiles</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li class="active"><a href="contacto.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 mt-10 pd-3">
+                    <img src="img/enviar.png" class="img-responsive" alt="">
+                </div>
+                <div class="col-lg-9 mt-10">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-xs-3">Email:</label>
+                            <div class="col-xs-9">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-3">Nombre:</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-3">Apellido:</label>
+                            <div class="col-xs-9">
+                                <input type="text" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-3" >Telefono:</label>
+                            <div class="col-xs-9">
+                                <input type="tel" class="form-control" placeholder="Telefono">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-xs-3">Dirección:</label>
+                            <div class="col-xs-9">
+                                <textarea rows="3" class="form-control" placeholder="Dirección"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <div class="col-xs-offset-3 col-xs-9">
+                                <input type="submit" class="btn btn-primary" value="Enviar">
+                                <input type="reset" class="btn btn-default" value="Limpiar">
+                            </div>
+                        </div>
+                    </form>		
+                 </div>   
+            </div>
+        </div>
+    </body>
+</html>

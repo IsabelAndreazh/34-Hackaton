@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Accesories Fashion</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no  initial-scale=1 maximum-scale=1 minimum-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/super-utiles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/agenda.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+                <nav class="navbar navbar-inverse navbar-fixed-top color-menu"> <!--NAVBAR codigo bootstrap para <menus-->
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed color-menu" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="index.html"><img class="img_logo" src="img/logo.png" alt=""></a>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse color-menu"> <!--COLLAPSE-->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="perfil.html">MiPoli Ciudadano</a></li>
+                                <li class="active"><a href="registro.html">Ingresar Perfiles</a></li>
+                                <li ><a href="agenda.html">Agenda</a></li>
+                                <li><a href="contacto.html">Contáctanos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <section>
+            <div class="container-fluid mt-10">
+                <div class="row">
+                    <div class="col-lg-12">
+                      <h1 class="text-center">Area de registro</h1>
+                      <form class="form-horizontal" action="register.php" method="post">
+                        <div class="form-group">
+                          <label for="inputName3" class="col-sm-2 control-label">Nombre</label>
+                          <div class="col-sm-10">
+                            <input type="nombre" class="form-control" name="nombre" id="nombre" placeholder="Ingresa tu nombre" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputDireccion3" class="col-sm-2 control-label">Direccion</label>
+                          <div class="col-sm-10">
+                            <input type="direccion" class="form-control" name="direccion" id="direccion" placeholder="Ingresa tu dirección" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputUsername3" class="col-sm-2 control-label">Usuario</label>
+                          <div class="col-sm-10">
+                            <input type="username" class="form-control" name="username" id="username" placeholder="Ingresa tu usuario" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="inputPassword3" class="col-sm-2 control-label">Contraseña</label>
+                          <div class="col-sm-10">
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Registrar</button>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                        <div class="col-xs-offset-3 col-xs-9">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="agree">  Accepto <a href="#">Terminos y condiciones</a>.
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-xs-offset-3 col-xs-9">
+                            <input type="submit" class="btn btn-primary" value="Enviar">
+                            <input type="reset" class="btn btn-default" value="Limpiar">
+                        </div>
+                    </div>  
+                    <div class="col-xs-offset-3 col-xs-9">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="news"> Enviar noticias.
+                        </label>
+                    </div>
+                    </div>
+                    </section>
+                </form>		
+            </div>
+        </div>
+      </section>
+   </body>
+</html>>
+
